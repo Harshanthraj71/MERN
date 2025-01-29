@@ -1,74 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Harshanthraj's Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Harshanthraj's Portfolio</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        p {
+            margin-bottom: 1.5em;
+            font-size: 1.1em;
+        }
+
+        a {
+            color: #ffeb3b;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 60px 0;
+            border-bottom: 3px solid #ffeb3b;
+        }
+
+        header .container {
+            text-align: center;
+        }
+
+        /* Sections */
+        section {
+            margin: 50px 0;
+            padding: 40px 0;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ffeb3b;
+        }
+
+        .skill-card, .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill-card:hover, .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .project-card h3, .skill-card h3 {
+            font-size: 1.5em;
+            color: #ffeb3b;
+        }
+
+        .project-card p, .skill-card p {
+            font-size: 1.1em;
+        }
+
+        /* Contact */
+        .contact a {
+            color: #ffeb3b;
+            font-weight: 600;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            border-top: 3px solid #ffeb3b;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .subtitle {
+                font-size: 1em;
+            }
+
+            section h2 {
+                font-size: 2em;
+            }
+
+            .skill-card, .project-card {
+                padding: 15px;
+                margin: 10px 0;
+            }
+
+            .project-card h3, .skill-card h3 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Harshanthraj</h1>
-      <p>Java & MERN Stack Developer</p>
-    </div>
-  </header>
 
-  <section class="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>Hello! I'm Harshanthraj, a passionate software developer skilled in Java and MERN stack development. I love building innovative web applications and solving complex problems.</p>
-    </div>
-  </section>
-
-  <section class="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul>
-        <li>Java</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>MongoDB</li>
-        <li>Express.js</li>
-        <li>HTML, CSS, JavaScript</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-list">
-        <div class="project">
-          <h3>Project 1: Web App</h3>
-          <p>A full-stack web application built using React, Node.js, and MongoDB.</p>
+    <header>
+        <div class="container">
+            <h1>Harshanthraj</h1>
+            <p class="subtitle">Second-year Student at Sri Krishna College of Engineering and Technology</p>
         </div>
-        <div class="project">
-          <h3>Project 2: Java Application</h3>
-          <p>A desktop application built with Java, featuring advanced algorithms for data processing.</p>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello, I'm Harshanthraj, a second-year student at Sri Krishna College of Engineering and Technology. I am passionate about software development, particularly Java, HTML, and CSS. My goal is to learn, build innovative projects, and contribute to real-world applications.</p>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out for collaboration or if you'd like to discuss a project.</p>
-      <form action="#">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
+    <section class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-card">
+                <h3>Java</h3>
+                <p>Strong knowledge in Java programming for developing software applications.</p>
+            </div>
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>Experienced in crafting semantic and responsive webpages using HTML.</p>
+            </div>
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>Skilled in creating visually appealing layouts and designs using CSS.</p>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Harshanthraj. All rights reserved.</p>
-    </div>
-  </footer>
+    <section class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Personal Portfolio Website</h3>
+                <p>A sleek and responsive portfolio website built with HTML and CSS.</p>
+                <p><strong>Technologies Used:</strong> HTML, CSS</p>
+            </div>
+            <div class="project-card">
+                <h3>Simple Java Calculator</h3>
+                <p>A basic Java calculator to perform arithmetic operations.</p>
+                <p><strong>Technologies Used:</strong> Java</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: harshanthraj@example.com</p>
+            <p>LinkedIn: <a href="#">Your LinkedIn Profile</a></p>
+            <p>GitHub: <a href="#">Your GitHub Profile</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Harshanthraj. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
